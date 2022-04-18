@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!--Define the site title information and site logo, add CSS from Bootstrap-->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dentopedia</title>
+    <link 
+        rel="icon" 
+        href="images/Group 431.svg" 
+        type="image/svg">
+
+
+    <!-- CSS from Bootstrap -->
+    <link 
+        href="node_modules/bootstrap/dist/css/bootstrap.css" 
+        rel="stylesheet" 
+        type="text/css"
+        >
+</head>
+
+
+
+
+<!--Main site body-->
+
+<body>
+    <!-- JavaScript Bundle with Popper -->
+    <script 
+        src="node_modules/bootstrap/dist/js/bootstrap.bundle.js">
+    </script>
+
+    <!--Banner Header of the site-->
+    <header id="header" class="container-fluid fixed-top" style="background-color: #f8f9fa; margin: 0px;">
+
+        <!--Define header row with search and social contacts-->
+        <div role="top banner" style="width: 100%; height: 24 px;">
+            <div class="container" style="width: 100%; height: 32px;">
+                <nav>
+                    <ul class="nav social_media justify-content-end">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" style="padding: 5px">
+                                <img src="/WEB/App/icons/social_media/twitter_logo.svg" alt="Twitter handle" style="width: 24px; height: 24px;">
+                            </a>
+                          </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" style="padding: 5px">
+                                <img src="/WEB/App/icons/social_media/facebook_logo.svg" alt="Facebook page" style="width: 24px; height: 24px;">
+                            </a>
+                          </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" style="padding: 5px">
+                                <img src="/WEB/App/icons/social_media/instagram_logo.png" alt="Instagram" style="width: 24px; height: 24px;">
+                            </a>
+                          </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" style="padding: 5px">
+                                <img src="/WEB/App/icons/social_media/linkedin_logo.svg" alt="LinkedIn page" style="width: 24px; height: 24px;">
+                            </a>
+                          </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" >
+                                <img src="/WEB/App/icons/social_media/youtube_logo.svg" alt="YouTube channel" style="width: 24px; height: 24px;">
+                            </a>
+                          </li>
+                    </ul>
+                </nav>
+            </div> 
+        </div>
+
+        <!--Define main header row with submenus-->
+        <div id="header_main" class="container-fluid row" style="background-color: #f8f9fa">
+            <nav id="mainmenu_area" class="navbar navbar-expand-sm bg-light sticky-top" role="navigation" style="background-color: #EBEEF2">
+                <ul id="mainmenu" class="navbar-nav justify-content-end">
+                    <a class="navbar-brand" href="index.html">
+                        <img src="images/Group 431.svg" alt="site logo" style="width:40px;" class="rounded-pill">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="collapsibleNavbar">                  
+                        <li class="current_menuitem nav-item">
+                            <a class="nav-link active" href="/">
+                                Home
+                            </a>
+                        </li>
+                        <li class="current_menuitem nav-item">
+                            <a class="nav-link" href="/Learn">
+                                Learn
+                            </a>
+                        </li>
+                        <li class="current_menuitem nav-item dropdown">
+                            <a href="/Library" 
+                                class="nav-link dropdown-toggle" 
+                                data-bs-toggle="dropdown">
+                                Library
+                                <!--Make a dropdown menu for items-->
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <a class="dropdown-item" href="/Dentistry">
+                                        Dentistry
+                                    </a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="/Basic_Sciences">
+                                            Basic Sciences
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="/Quiz">
+                                        Quiz
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="/Dentistry">
+                                        Dentistry
+                                        </a>
+                                    </li>
+                                </ul>
+                            </a>
+                            </li>
+                        <li class="nav-item current_menuitem">
+                            <a class="nav-link" href="/Learning_Plans">
+                                Learning Plans
+                            </a>
+                        </li>
+                        <li class="nav-item current_menuitem">
+                            <a class="nav-link" href="/Profile">
+                                Profile
+                            </a>
+                        </li>
+                        <li class ="nav-item">
+                            <a class="nav-link" href="/Contact">
+                                Contact Us
+                            </a>
+                        </li>
+                    </div>
+                </ul>
+            </nav>
+        </div>
+    </header>.
+
+
+    <!--Main site content-->
+    <div id="main" class="container-fluid" style="margin-top: 98px;">
+        <main>
+            <!-- Carousel -->
+            <div id="demo" class="container-fluid carousel slide d-none d-lg-block" data-bs-ride="carousel">
+
+                <!-- Indicators/dots -->
+                <div class="carousel-indicators">
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+                </div>
+            
+                <!-- The slideshow/carousel -->
+                <div class="carousel-inner">
+                <div class="carousel-item active" height="300px">
+                    <img src="https://res.cloudinary.com/people-matters/image/upload/fl_immutable_cache,w_624,h_351,q_auto,f_auto/v1505193006/1505193005.jpg" alt="Online Learning" class="d-block w-100 img-fluid">
+                    <div class="carousel-caption">
+                        <h3>Online Learning Platform</h3>
+                        <p>Learn online for free</p>
+                      </div>
+                </div>
+                <div class="carousel-item" height="300px">
+                    <img src="https://blog.crossknowledge.com/wp-content/uploads/2015/07/digital-learning.jpg" alt="Digital Learning" class="d-block w-100 img-fluid">
+                    <div class="carousel-caption">
+                        <h3>Digital Learning</h3>
+                        <p>Learn from Anywhere!!!</p>
+                      </div>
+                </div>
+                <div class="carousel-item" height="300px">
+                    <img src="https://exambazaar-2020.s3.amazonaws.com/6378d915d9adcc2470503a1348fabd81.png" alt="learn online" class="d-block w-100 img-fluid">
+                    <div class="carousel-caption">
+                        <h3>Free Access</h3>
+                        <p>Start Learning for free</p>
+                      </div>
+                </div>
+                </div>
+            
+                <!-- Left and right controls/icons -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+                </button>
+            </div>
+                        <aside>
+
+                        </aside>
+                        <article>
+                            
+                        </article>
+                    </main>
+                </div>
+
+    <!--Site footer-->
+    <footer id="footer" class="site_footer">
+        
+</body>
+</html>
