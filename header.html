@@ -6,34 +6,34 @@
     <!--Banner Header of the site-->
     <header id="header" class="container-fluid fixed-top" style="background-color: #f8f9fa; margin: 0px;">
 
-        <!--Define header row withv social links-->
-        <div role="top banner" class="top-banner">
-            <div class="container" style="width: 100%; height: 32px;">
+         <!--Define header row with social links-->
+         <div role="top banner" class="top-banner navbar">
+            <div class="container">
                 <nav>
-                    <ul class="nav social-media justify-content-end">
+                    <ul class="nav social-media">
                         <li class="nav-item">
-                            <a class="nav-link" href="#" style="padding: 5px">
-                                <img src="/WEB/App/icons/social_media/twitter_logo.svg" alt="Twitter handle" style="width: 24px; height: 24px;">
+                            <a class="nav-link-icon" href="#">
+                                <img src="/WEB/App/icons/social_media/twitter_logo.svg" alt="Twitter handle">
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#" style="padding: 5px">
-                                <img src="/WEB/App/icons/social_media/facebook_logo.svg" alt="Facebook page" style="width: 24px; height: 24px;">
+                            <a class="nav-link-icon" href="#">
+                                <img src="/WEB/App/icons/social_media/facebook_logo.svg" alt="Facebook page">
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#" style="padding: 5px">
-                                <img src="/WEB/App/icons/social_media/instagram_logo.png" alt="Instagram" style="width: 24px; height: 24px;">
+                            <a class="nav-link-icon" href="#">
+                                <img src="/WEB/App/icons/social_media/instagram_logo.png" alt="Instagram">
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#" style="padding: 5px">
-                                <img src="/WEB/App/icons/social_media/linkedin_logo.svg" alt="LinkedIn page" style="width: 24px; height: 24px;">
+                            <a class="nav-link-icon" href="#">
+                                <img src="/WEB/App/icons/social_media/linkedin_logo.svg" alt="LinkedIn page">
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#" >
-                                <img src="/WEB/App/icons/social_media/youtube_logo.svg" alt="YouTube channel" style="width: 24px; height: 24px;">
+                            <a class="nav-link-icon" href="#" >
+                                <img src="/WEB/App/icons/social_media/youtube_logo.svg" alt="YouTube channel">
                             </a>
                         </li>
                     </ul>
@@ -42,19 +42,23 @@
         </div>
 
         <!--Define main header row with submenus-->
-        <div id="header_main" class="container-fluid row" style="background-color: #f8f9fa">
-            <nav id="mainmenu_area" class="navbar navbar-expand-sm bg-light sticky-top" role="navigation" style="background-color: #EBEEF2">
-                <ul class="navbar-nav">
+        <div class="container row">
+            <nav class="navbar navbar-nav" role="navigation">
+                <ul>
                     <a class="navbar-brand" href="index.html">
                         <img src="App/icons/Group 435.png" alt="site logo">
                     </a>
                 </ul>
+
+
+                <!--hovering over explore shows the dropdown menu-->
                 <ul class="dropdown-toggle">
                     <li class="nav-link dropdown">
                         <a>Explore</a>
                     </li>                 
                     <!--Make a dropdown menu for items-->
                     <ul class="dropdown-menu">
+                        <!--Define the items in the dropdown menu-->
                         <li>
                             <a class="dropdown-item" href="/">
                             Home
@@ -76,8 +80,25 @@
                             </a>
                         </li>
                     </ul>
-                </li>
-                    </div>
+                </ul>
+
+                <!--Search Bar in top header-->
+                <div class="header-search-bar">
+                    <input type="text" placeholder="What are you looking for?">
+                    
+                </div>
+
+
+
+
+                <!--log in and sign up buttons-->
+                <ul class="navbar-nav navbar">
+                    <li class="nav-link">
+                        <a>Sign Up</a>
+                    </li>
+                    <li class="nav-link">
+                        <a>Log In</a>
+                    </li>
                 </ul>
             </nav>
         </div>

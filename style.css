@@ -1,5 +1,7 @@
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-right: 0.75rem;
+    padding-left: 0.75rem;
 }
 
 a {
@@ -25,14 +27,30 @@ ul {
     left: 0;
 }
 
-.top-banner {
-    width: 100%; height: 32px;
-}
 .fixed-bottom {
     position: fixed;
     right: 0;
     bottom: 0;
     left: 0;
+}
+
+.top-banner {
+    width: 100%; height: 32px;
+    display: flex ;
+    flex-direction: row;
+}
+
+.container {
+    display: block ;
+    width: 100%;
+    padding-right: 0.75rem;
+    padding-left: 00.75rem;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.social-media {
+    justify-content: flex-end;
 }
 
 
@@ -50,16 +68,18 @@ ul {
 .nav-link {
     display: block;
     padding: 0.5rem;
-    font-size: ;
-    font-weight: ;
+    font-size: inherit;
+    font-weight: inherit;
     color: #2F349F;
     text-decoration: none;
-    transition: color 0.15s ease-in-out; background-color: 0.15s ease-in-out; border-color: 0.15s ease-in-out;
-    transition-property: color; background-color; border-color;
-    transition-duration: 0.15s, 0.15s, 0.15s;
-    transition-timing-function: ease-in-out, ease-in-out, ease-in-out;
-    transition-delay: 0s, 0s, 0s;
     text-align: inherit;
+    list-style: none;
+}
+
+.nav-link-icon {
+    display:block;
+    padding: 5px;
+    width: 24px; height: 24px;
     list-style: none;
 }
 
@@ -68,15 +88,17 @@ ul {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: space-between; 
-    padding-top: ;
-    padding-right: ;
-    padding-bottom: ;
-    padding-left: ;
+    justify-content:space-evenly;
+    background-color: #EBEFF2; 
     display: flex;
     flex-wrap: inherit;
     align-items: center;
     justify-content: space-between;
+}
+
+.navbar-nav {
+    display: flex ;
+    flex-direction: row;
 }
 
 .navbar-brand {
@@ -114,16 +136,18 @@ ul {
     margin-left: 0.255em;
     vertical-align: 0.255em;
 }
+
 .dropdown-menu a:hover {
     background-color: #ddd;
 }
+
 .dropdown-toggle:hover .dropdown-menu {
     display: block;
 }
 
 .dropdown-item {
     display: block;
-    width: 100%;
+    width: inherit;
     padding: 0.25rem 1rem;
     clear: both;
     font-weight: 400;
@@ -135,18 +159,37 @@ ul {
     border: 0;
 }
 
-.social-media {
-    justify-content: end;
+/*Search fields*/
+
+.header-search-bar {
+    padding: inherit;
 }
 
+.header-search-bar input {
+    width: fit-content;
+    border-radius: 18px;
+}
 
+.header-search-bar input[type=text] {
+    padding: inherit;
+    border: none;
+    font-size: 18px;
+    background-color: white;
+    color: #2F349F;
+    padding: 10px 10px;
+}
 
+.header-search-bar input[type=text] :focus {
+    border: 1px solid #2F349F;
+    padding: 10px 10px;
+}
 
-
-
-
-
-
+.header-search-bar ::placeholder {
+    color: #2F349F;
+    opacity: 60%;
+    font-size: 18px;
+    padding: 5px;
+}
 
 
 /*footer*/
@@ -162,7 +205,7 @@ ul {
     flex-wrap: nowrap;
 }
 .footer-logo {
-    display: inline;
+    display: flex;
     padding-top: 1em;
     padding-bottom: 1em;
 }
@@ -175,22 +218,29 @@ ul {
     padding-top: 1em;
 }
 
-.footer-title {
-    
+.footer-description {
+    color: #343638;
+    width: 180px;
 }
 
-.footer-description {
+.footer-social {
+    display: flex;
+    flex-direction: row;
+    padding-left: 0%;
+    padding-top: 4em;
+}
 
+.footer-social-icons {
+    height: 32px;
+    width: 32px;
+    padding-left: 0px;
+    padding-right: 10px;
 }
 
 .footer-link {
     font-size: 16px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin-bottom: 10px;
-}
-
-.footer-appstore {
-
 }
 
 .appstores {
@@ -205,7 +255,7 @@ ul {
     padding-bottom: 0.5em;
 }
 .footer-nav {
-    width: 170px;
+    width: 180px;
 }
 
 /*bottom of footer showing copyright information*/
