@@ -4,49 +4,14 @@
 </head>
 <body>
     <!--Banner Header of the site-->
-    <header id="header" class="container-fluid fixed-top" style="background-color: #f8f9fa; margin: 0px;">
-
-         <!--Define header row with social links-->
-         <div role="top banner" class="top-banner navbar">
-            <div class="container">
-                <nav>
-                    <ul class="nav social-media">
-                        <li class="nav-item">
-                            <a class="nav-link-icon" href="#">
-                                <img src="/WEB/App/icons/social_media/twitter_logo.svg" alt="Twitter handle">
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link-icon" href="#">
-                                <img src="/WEB/App/icons/social_media/facebook_logo.svg" alt="Facebook page">
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link-icon" href="#">
-                                <img src="/WEB/App/icons/social_media/instagram_logo.png" alt="Instagram">
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link-icon" href="#">
-                                <img src="/WEB/App/icons/social_media/linkedin_logo.svg" alt="LinkedIn page">
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link-icon" href="#" >
-                                <img src="/WEB/App/icons/social_media/youtube_logo.svg" alt="YouTube channel">
-                            </a>
-                        </li>
-                    </ul>
-                </nav>
-            </div> 
-        </div>
+    <header id="header" class="container-header fixed-top">
 
         <!--Define main header row with submenus-->
         <div class="container row">
             <nav class="navbar navbar-nav" role="navigation">
                 <ul>
                     <a class="navbar-brand" href="index.html">
-                        <img src="App/icons/Group 435.png" alt="site logo">
+                        <img src="images/site logo.png" alt="site logo" class="navbar-brand">
                     </a>
                 </ul>
 
@@ -55,9 +20,11 @@
                 <ul class="dropdown-toggle">
                     <li class="nav-link dropdown">
                         <a>Explore</a>
-                    </li>                 
+                    </li>
+
                     <!--Make a dropdown menu for items-->
                     <ul class="dropdown-menu">
+
                         <!--Define the items in the dropdown menu-->
                         <li>
                             <a class="dropdown-item" href="/">
@@ -97,10 +64,52 @@
                         <a>Sign Up</a>
                     </li>
                     <li class="nav-link">
-                        <a>Log In</a>
+                        <button id="loginbtn">Log In</button>
                     </li>
                 </ul>
+
+                <div id="myLogin" class="login">
+                    <form>
+                    <!-- Log in pop-up content -->
+                        <div class="login-popup" id="loginForm">
+                        
+                            <!-- Manual Login Form -->
+                            <input type="text" name="username" placeholder="Username" required>
+                            <input type="password" name="password" placeholder="Password" required>
+                            <input type="submit" value="Login">
+
+
+                            <!-- Social Login buttons -->
+                            <div class="col">
+                                <a href="#" class="fb btn">
+                                 <i class="fa fa-facebook fa-fw"></i> Login with Facebook
+                                </a>
+                                <a href="#" class="twitter btn">
+                                <i class="fa fa-twitter fa-fw"></i> Login with Twitter
+                                </a>
+                                <a href="#" class="google btn">
+                                <i class="fa fa-google fa-fw"></i> Login with Google+
+                                </a>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                              <a href="#" style="color:white" class="btn">Sign up</a>
+                            </div>
+                            <div class="col">
+                              <a href="#" style="color:white" class="btn">Forgot password?</a>
+                            </div>
+                        </div>
+                        <div class="close">
+                            <button class="login-close">
+                                Close
+                            </button>
+                        </div>
+                    </form>
+                </div>
+
             </nav>
         </div>
     </header>
+    <script src="/script-signin.js"></script>
 </body>

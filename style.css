@@ -10,13 +10,19 @@ a {
     cursor: pointer;
 }
 
+button {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}
+
 ul {
-    margin-block-start: 1em;
-    margin-block-end: 1em;
+    list-style-type: none;
+    padding-inline-start: 40px;
+    margin-block-start: 0px;
+    margin-block-end: 0px;
     margin-inline-start: 0px;
     margin-inline-end: 0px;
-    padding-inline-start: 40px;
-    list-style-type: none;
 }
 
 /*header*/
@@ -34,23 +40,14 @@ ul {
     left: 0;
 }
 
-.top-banner {
-    width: 100%; height: 32px;
-    display: flex ;
-    flex-direction: row;
-}
-
 .container {
     display: block ;
     width: 100%;
-    padding-right: 0.75rem;
-    padding-left: 00.75rem;
-    margin-right: auto;
-    margin-left: auto;
 }
 
-.social-media {
-    justify-content: flex-end;
+.container-header {
+    background-color: #f8f9fa;
+    margin: 0px;
 }
 
 
@@ -58,28 +55,19 @@ ul {
 
 .nav {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     flex-wrap: wrap;
-    padding-left: 0;
-    margin-bottom: 0;
     list-style: none;
 }
 
 .nav-link {
     display: block;
     padding: 0.5rem;
-    font-size: inherit;
+    font-size: 18px;
     font-weight: inherit;
     color: #2F349F;
     text-decoration: none;
     text-align: inherit;
-    list-style: none;
-}
-
-.nav-link-icon {
-    display:block;
-    padding: 5px;
-    width: 24px; height: 24px;
     list-style: none;
 }
 
@@ -90,9 +78,8 @@ ul {
     align-items: center;
     justify-content:space-evenly;
     background-color: #EBEFF2; 
-    display: flex;
-    flex-wrap: inherit;
     align-items: center;
+    height: 64px;
     justify-content: space-between;
 }
 
@@ -102,13 +89,12 @@ ul {
 }
 
 .navbar-brand {
-    padding-top: 0.3125rem;
-    padding-bottom: 0.3125rem;
-    margin-right: 1rem;
+    padding-top: inherit;
+    padding-bottom: inherit;
     font-size: 1.25rem;
     white-space: nowrap;
     color: #2F349F;
-    height: 48px;
+    height: 32px;
 }
 
 
@@ -151,6 +137,7 @@ ul {
     padding: 0.25rem 1rem;
     clear: both;
     font-weight: 400;
+    font-size: inherit;
     color: inherit;
     text-align: inherit;
     text-decoration: none;
@@ -174,6 +161,7 @@ ul {
     padding: inherit;
     border: none;
     font-size: 18px;
+    width: 250px;
     background-color: white;
     color: #2F349F;
     padding: 10px 10px;
@@ -190,6 +178,44 @@ ul {
     font-size: 18px;
     padding: 5px;
 }
+
+
+/* Pop-Ups */
+
+
+/* Login In Pop Up */
+/* The Pop Up */
+.login {
+    display: none; /* Hidden by default */
+    position: fixed; 
+    z-index: 1;
+    left: 75%;
+    top: 64px;
+    width: 20%;
+    height: auto; 
+    overflow: auto; 
+    background-color: #EBEFF2; /* Fallback color */
+    border-radius: 5px;
+}
+  
+/* Pop Up Content */
+
+input,
+.btn {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 4px;
+  margin: 5px 0;
+  opacity: 0.85;
+  display: inline-block;
+  font-size: 17px;
+  line-height: 20px;
+  text-decoration: none;
+}
+
+
+
 
 
 /*footer*/
