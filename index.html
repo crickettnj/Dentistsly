@@ -6,11 +6,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dentopedia</title>
+    <title>Odontologia</title>
     <link 
         rel="icon" 
-        href="images/Group 431.svg" 
+        href="images/logo.png" 
         type="image/svg">
+    <link rel="stylesheet" href="/style.css" type="text/css">
 </head>
 
 
@@ -19,64 +20,197 @@
 <!--Main site body-->
 
 <body>
-   
+   <!--Banner Header of the site-->
+   <header id="header" class="fixed-top">
+        <!--Define main header row with submenus-->
+        <div class="container row">
+            <nav class="navbar navbar-nav" role="navigation">
+                <ul class="navbar navbar-nav">
+                    <li>
+                        <a class="navbar-brand" href="index.html">
+                            <img src="images/site-logo.png" alt="site logo" class="navbar-brand">
+                        </a>
+                    </li>
+                    <li>
+                        <a class="nav-link header-nav" href="/">
+                            Home
+                        </a>
+                        </li>
+                    <li>
+                        <a class="nav-link header-nav" href="#">
+                            My Learning
+                        </a>
+                    </li>
+
+
+                    <!--hovering over explore shows the dropdown menu-->
+                    <div class="dropdown-toggle">
+                        <li class="dropdown">
+                            <a class="nav-link header-nav">Explore</a>
+                        </li>
+
+                        <!--Make a dropdown menu for items-->
+                        <ul class="dropdown-menu">
+
+                            <!--Define the items in the dropdown menu-->
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    Library
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    Courses
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    Learning Paths
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    Quiz
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    Shop
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!--Search Bar in top header-->
+                    <div class="header-search-bar">
+                        <input type="text" placeholder="What are you looking for?" autocorrect="on" autocapitalize="off" spellcheck="true">
+                        <img src="/images/Search Icon.png" class="search-icon">
+                    </div>
+                </ul>
+
+                <!--log in and sign up buttons-->
+                <ul class="navbar-nav navbar">
+                    <li>
+                        <a class="nav-link signup">Sign Up</a>
+                    </li>
+                    <li>
+                        <a class="nav-link login">Log In</a>
+                    </li>
+                </ul>
+
+            </nav>
+        </div>
+    </header>
     <!--Main site content-->
-    <div id="main" class="container-fluid" style="margin-top: 98px;">
         <main>
-            <!-- Carousel -->
-            <div id="demo" class="container-fluid carousel slide d-none d-lg-block" data-bs-ride="carousel">
 
-                <!-- Indicators/dots -->
-                <div class="carousel-indicators">
-                <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
-                <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
-                <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
-                </div>
-            
-                <!-- The slideshow/carousel -->
-                <div class="carousel-inner">
-                <div class="carousel-item active" height="300px">
-                    <img src="https://res.cloudinary.com/people-matters/image/upload/fl_immutable_cache,w_624,h_351,q_auto,f_auto/v1505193006/1505193005.jpg" alt="Online Learning" class="d-block w-100 img-fluid">
-                    <div class="carousel-caption">
-                        <h3>Online Learning Platform</h3>
-                        <p>Learn online for free</p>
-                      </div>
-                </div>
-                <div class="carousel-item" height="300px">
-                    <img src="https://blog.crossknowledge.com/wp-content/uploads/2015/07/digital-learning.jpg" alt="Digital Learning" class="d-block w-100 img-fluid">
-                    <div class="carousel-caption">
-                        <h3>Digital Learning</h3>
-                        <p>Learn from Anywhere!!!</p>
-                      </div>
-                </div>
-                <div class="carousel-item" height="300px">
-                    <img src="https://exambazaar-2020.s3.amazonaws.com/6378d915d9adcc2470503a1348fabd81.png" alt="learn online" class="d-block w-100 img-fluid">
-                    <div class="carousel-caption">
-                        <h3>Free Access</h3>
-                        <p>Start Learning for free</p>
-                      </div>
-                </div>
-                </div>
-            
-                <!-- Left and right controls/icons -->
-                <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon"></span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
-                <span class="carousel-control-next-icon"></span>
-                </button>
-            </div>
-                        <aside>
-
-                        </aside>
-                        <article>
-                            
-                        </article>
-                    </main>
-                </div>
-
+        </main>
     <!--Site footer-->
-    <footer id="footer" class="site_footer">
+    <footer>
+        <div class="footer">
+            <div class="footer-top">
+                <div class="footer-nav">
+                    <img src="/images/site-logo.png" alt="footer logo" class="footer-logo">
+                    <p class="footer-description">
+                        Short description of what the company is about and what the goals are.
+                    </p>
+                    <div>
+                        <ul  class="footer-social">
+                            <li>
+                                <a>
+                                    <img src="/images/icons/social-media/facebook-logo.png" alt="facebook" class="footer-social-icons">
+                                </a>
+                            </li>
+                            <li>
+                                <a>
+                                    <img src="/images/icons/social-media/twitter-logo.png" alt="twitter" class="footer-social-icons">
+                                </a>
+                            </li>
+                            <li>
+                                <a>
+                                    <img src="images/icons/social-media/linkedin-logo.png" alt="linkedin" class="footer-social-icons">
+                                </a>
+                            </li>
+                            <li>
+                                <a>
+                                    <img src="images/icons/social-media/instagram-logo.png" alt="instagram" class="footer-social-icons">
+                                </a>
+                            </li>
+                            <li>
+                                <a>
+                                    <img src="images/icons/social-media/youtube-logo.png" alt="youtube" class="footer-social-icons">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-nav">
+                    <nav>
+                        <ul class="footer-list">
+                            <li class="footer-heading">
+                                Quick Links
+                            </li>
+                            <li class="footer-link">
+                                <a href="index.html">Home</a>
+                            </li>
+                            <li class="footer-link">
+                                <a href="library.html">Library</a>
+                            </li>
+                            <li class="footer-link">
+                                <a href="faq.html">FAQ</a>
+                            </li>
+                            <li class="footer-link">
+                                <a href="contact.html">Contact Us</a>
+                            </li>
+                            <li class="footer-link">
+                                <a href="feedback.html">Feedback</a>
+                            </li>
+                            <li class="footer-link">
+                                <a href="service.html">Terms of Service</a>
+                            </li>
+                            <li class="footer-link">
+                                <a href="privacy.html">Privacy Policy</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="footer-nav">
+                    <ul class="footer-list">
+                        <li class="footer-heading">
+                            Our Products
+                        </li>
+                        <li class="footer-link">
+                            <a href="">Android App</a>
+                        </li>
+                        <li class="footer-link">
+                            <a href="">iOS App</a>
+                        </li>
+                        <li class="footer-link">
+                            <a href="\shop.html">Shop</a>
+                        </li>
+                        <li class="footer-link">
+                            <a href="\examprep.html">ExamPrep</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-nav">
+                    <p class="footer-heading">Download Our Apps</p>
+                    <div>
+                        <a>
+                            <img src="/images/icons/get on app store.png" class="appstore-link appstores">
+                        </a>
+                    </div>
+                    <div>
+                        <a>
+                            <img src="/images/icons/get on play store.png" class="appstore-link appstores">
+                        </a>                        
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                    <p class="copyright-text">© Copyright 2022 Dentistsly Inc. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
         
 </body>
 </html>

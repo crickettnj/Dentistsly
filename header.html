@@ -4,22 +4,33 @@
 </head>
 <body>
     <!--Banner Header of the site-->
-    <header id="header" class="container-header fixed-top">
+    <header id="header" class="fixed-top">
 
         <!--Define main header row with submenus-->
         <div class="container row">
             <nav class="navbar navbar-nav" role="navigation">
-                <ul>
-                    <a class="navbar-brand" href="index.html">
-                        <img src="images/site logo.png" alt="site logo" class="navbar-brand">
-                    </a>
-                </ul>
+                <ul class="navbar navbar-nav">
+                    <li>
+                        <a class="navbar-brand" href="index.html">
+                            <img src="images/site logo.png" alt="site logo" class="navbar-brand">
+                        </a>
+                    </li>
+                    <li>
+                        <a class="nav-link header-nav" href="/">
+                        Home
+                        </a>
+                    </li>
+                    <li>
+                        <a class="nav-link header-nav" href="#">
+                            My Learning
+                        </a>
+                    </li>
 
 
                 <!--hovering over explore shows the dropdown menu-->
-                <ul class="dropdown-toggle">
-                    <li class="nav-link dropdown">
-                        <a>Explore</a>
+                <div class="dropdown-toggle">
+                    <li class="dropdown">
+                        <a class="nav-link header-nav">Explore</a>
                     </li>
 
                     <!--Make a dropdown menu for items-->
@@ -27,89 +38,55 @@
 
                         <!--Define the items in the dropdown menu-->
                         <li>
-                            <a class="dropdown-item" href="/">
-                            Home
-                        </a>
-                        </li>
-                        <li>
                             <a class="dropdown-item" href="#">
                                 Library
                             </a>
                         </li>
                         <li>
                             <a class="dropdown-item" href="#">
-                            Profile
+                                Courses
                             </a>
                         </li>
                         <li>
                             <a class="dropdown-item" href="#">
-                            Shop
+                                Learning Paths
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="#">
+                                Quiz
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="#">
+                                Shop
                             </a>
                         </li>
                     </ul>
-                </ul>
-
+                </div>
                 <!--Search Bar in top header-->
                 <div class="header-search-bar">
-                    <input type="text" placeholder="What are you looking for?">
-                    
+                    <input type="text" placeholder="What are you looking for?" autocorrect="on" autocapitalize="off" spellcheck="true">
+                    <img src="/images/Search Icon.png" class="search-icon">
                 </div>
+                </ul>
+
+                
 
 
 
 
                 <!--log in and sign up buttons-->
                 <ul class="navbar-nav navbar">
-                    <li class="nav-link">
-                        <a>Sign Up</a>
+                    <li>
+                        <a class="nav-link signup">Sign Up</a>
                     </li>
-                    <li class="nav-link">
-                        <button id="loginbtn">Log In</button>
+                    <li>
+                        <a class="nav-link login">Log In</a>
                     </li>
                 </ul>
-
-                <div id="myLogin" class="login">
-                    <form>
-                    <!-- Log in pop-up content -->
-                        <div class="login-popup" id="loginForm">
-                        
-                            <!-- Manual Login Form -->
-                            <input type="text" name="username" placeholder="Username" required>
-                            <input type="password" name="password" placeholder="Password" required>
-                            <input type="submit" value="Login">
-
-
-                            <!-- Social Login buttons -->
-                            <div class="col">
-                                <a href="#" class="fb btn">
-                                 <i class="fa fa-facebook fa-fw"></i> Login with Facebook
-                                </a>
-                                <a href="#" class="twitter btn">
-                                <i class="fa fa-twitter fa-fw"></i> Login with Twitter
-                                </a>
-                                <a href="#" class="google btn">
-                                <i class="fa fa-google fa-fw"></i> Login with Google+
-                                </a>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col">
-                              <a href="#" style="color:white" class="btn">Sign up</a>
-                            </div>
-                            <div class="col">
-                              <a href="#" style="color:white" class="btn">Forgot password?</a>
-                            </div>
-                        </div>
-                        <div class="close">
-                            <button class="login-close">
-                                Close
-                            </button>
-                        </div>
-                    </form>
-                </div>
 
             </nav>
         </div>
     </header>
-    <script src="/script-signin.js"></script>
 </body>

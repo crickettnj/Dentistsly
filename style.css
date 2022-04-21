@@ -1,7 +1,6 @@
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    padding-right: 0.75rem;
-    padding-left: 0.75rem;
+    margin: auto;
 }
 
 a {
@@ -45,12 +44,6 @@ ul {
     width: 100%;
 }
 
-.container-header {
-    background-color: #f8f9fa;
-    margin: 0px;
-}
-
-
 /*navigation items*/
 
 .nav {
@@ -76,7 +69,7 @@ ul {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    justify-content:space-evenly;
+    justify-content:inherit;
     background-color: #EBEFF2; 
     align-items: center;
     height: 64px;
@@ -97,6 +90,17 @@ ul {
     height: 32px;
 }
 
+.header-nav {
+    padding-left: 25px;
+}
+
+.login {
+
+}
+
+.signup {
+
+}
 
 /*Dropdown Menus*/
 .dropdown-menu {
@@ -161,7 +165,7 @@ ul {
     padding: inherit;
     border: none;
     font-size: 18px;
-    width: 250px;
+    width: 300px;
     background-color: white;
     color: #2F349F;
     padding: 10px 10px;
@@ -179,48 +183,35 @@ ul {
     padding: 5px;
 }
 
+.search-icon {
+    padding-top: inherit;
+    border: none;
+    position: absolute;
+    background-color: #CDD5FF;
+    display: inline-block;
+    margin: 2px 0px 8px 10px;
+    padding: 3px;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
 
 /* Pop-Ups */
-
-
-/* Login In Pop Up */
-/* The Pop Up */
-.login {
-    display: none; /* Hidden by default */
-    position: fixed; 
-    z-index: 1;
-    left: 75%;
-    top: 64px;
-    width: 20%;
-    height: auto; 
-    overflow: auto; 
-    background-color: #EBEFF2; /* Fallback color */
-    border-radius: 5px;
-}
-  
-/* Pop Up Content */
-
-input,
-.btn {
-  width: 100%;
-  padding: 12px;
-  border: none;
-  border-radius: 4px;
-  margin: 5px 0;
-  opacity: 0.85;
-  display: inline-block;
-  font-size: 17px;
-  line-height: 20px;
-  text-decoration: none;
-}
-
 
 
 
 
 /*footer*/
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+  }
 
 /*top half of footer containing details and links*/
+
 .footer-top {
     background-color: #EBEFF2;
     width: 100%;
@@ -285,6 +276,7 @@ input,
 }
 
 /*bottom of footer showing copyright information*/
+
 .footer-bottom {
     background-color: #343638;
     width: 100%;
