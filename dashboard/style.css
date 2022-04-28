@@ -1,0 +1,305 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: auto;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}
+
+button {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}
+
+ul {
+    list-style-type: none;
+    padding-inline-start: 40px;
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+/*header*/
+.fixed-top {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+}
+
+.fixed-bottom {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.container {
+    display: block ;
+    width: 100%;
+}
+
+/*navigation items*/
+
+.nav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    list-style: none;
+}
+
+.nav-link {
+    display: block;
+    padding: 0.5rem;
+    font-size: 18px;
+    font-weight: inherit;
+    color: #6268dd;
+    text-decoration: none;
+    text-align: inherit;
+    list-style: none;
+}
+
+.navbar {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content:inherit;
+    background-color: #EBEFF2; 
+    align-items: center;
+    height: 64px;
+    justify-content: space-between;
+}
+
+.navbar-nav {
+    display: flex ;
+    flex-direction: row;
+}
+
+.navbar-brand {
+    padding-top: inherit;
+    padding-bottom: inherit;
+    padding-right: 0em;
+    padding-left: 0em;
+    font-size: 1.25rem;
+    white-space: nowrap;
+    color: #6268dd;
+    height: 32px;
+    margin-left: 1em;
+}
+
+.header-nav {
+    padding-left: 25px;
+}
+
+.login {
+    display: inline;
+    width: 180px;
+    border-radius: 5px;
+    background-color: #2F349F;
+    color: #9BA9F2;
+    padding-right: 1em;
+    padding-left: 1em;
+    margin-right: 2em;
+}
+
+.signup {
+    margin-right: 1em;
+    margin-left: 1em;
+}
+
+/*Dropdown Menus*/
+.dropdown-menu {
+    position: absolute;
+    display: none;
+    min-width: 8rem;
+    padding: 0.5rem 0;
+    margin: 0;
+    font-size: 1em;
+    color: inherit;
+    text-align: left;
+    list-style: none;
+    background-color: #EBEFF2;
+    background-clip: padding-box;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    border-radius: 0.25rem;
+    box-shadow: #343638;
+}
+
+.dropdown-toggle {
+    white-space: nowrap;
+    display: inline-block;
+    margin-left: 0.255em;
+    vertical-align: 0.255em;
+}
+
+.dropdown-menu a:hover {
+    background-color: #ddd;
+}
+
+.dropdown-toggle:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown-item {
+    display: block;
+    width: inherit;
+    padding: 0.25rem 1rem;
+    clear: both;
+    font-weight: 400;
+    font-size: inherit;
+    color: #6268dd;
+    text-align: inherit;
+    text-decoration: none;
+    white-space: nowrap;
+    background-color: transparent;
+    border: 0;
+}
+
+/*Search fields*/
+
+.header-search-bar {
+    padding: inherit;
+}
+
+.header-search-bar input {
+    width: fit-content;
+    border-radius: 18px;
+}
+
+.header-search-bar input[type=text] {
+    padding: inherit;
+    border: none;
+    font-size: 18px;
+    width: 400px;
+    background-color: white;
+    color: #2F349F;
+    padding: 10px 10px;
+}
+
+.header-search-bar input[type=text] :focus {
+    border: 1px solid #2F349F;
+    padding: 10px 10px;
+}
+
+.header-search-bar ::placeholder {
+    color: #2F349F;
+    opacity: 60%;
+    font-size: 18px;
+    padding: 5px;
+}
+
+.search-icon {
+    padding-top: inherit;
+    border: none;
+    position: absolute;
+    background-color: #CDD5FF;
+    display: inline-block;
+    margin: 2px 0px 8px 10px;
+    padding: 3px;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+
+/* Pop-Ups */
+
+
+
+
+/*footer*/
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+  }
+
+/*top half of footer containing details and links*/
+
+.footer-top {
+    background-color: #EBEFF2;
+    width: 100%;
+    height: 310px;
+    justify-content: space-around;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.footer-logo {
+    display: flex;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+.footer-heading {
+    color: #343638;
+    font-weight: bold;
+    text-transform:uppercase;
+    padding-bottom: 1em;
+    padding-top: 1em;
+}
+
+.footer-description {
+    color: #343638;
+    width: 180px;
+}
+
+.footer-social {
+    display: flex;
+    flex-direction: row;
+    padding-left: 0%;
+    padding-top: 4em;
+}
+
+.footer-social-icons {
+    height: 32px;
+    width: 32px;
+    padding-left: 0px;
+    padding-right: 10px;
+}
+
+.footer-list {
+    align-items: flex-start;
+}
+
+.footer-link {
+    font-size: 16px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-bottom: 10px;
+}
+
+.appstores {
+    display: flex;
+    flex-direction: column;
+    width: 180px;
+    vertical-align: middle;
+}
+
+.appstore-link {
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+}
+.footer-nav {
+    width: 180px;
+}
+
+/*bottom of footer showing copyright information*/
+
+.footer-bottom {
+    background-color: #343638;
+    width: 100%;
+    height: 50px;
+    color: white;
+    text-align: center;
+    padding: 2px;
+    font-size: 16px;
+}
+
