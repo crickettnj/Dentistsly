@@ -1,4 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Arvo:700|Open+Sans");
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css");
+
 html {
   overflow-x: hidden;
 }
@@ -67,7 +69,7 @@ a:not([href]):not([tabindex]) {
 }
 
 .section-header p {
-  text: center;
+  text-align: center;
   font-weight: 400;
   line-height: 26px;
 }
@@ -187,46 +189,62 @@ button:focus {
   color: #6268DD;
 }
 
-.social-icon a {
-  color: #666;
-  background: #EBEFF2;
-  width: 32px;
-  height: 32px;
-  line-height: 34px;
-  display: inline-block;
-  text-align: center;
-  border-radius: 100%;
-  font-size: 16px;
-  margin: 15px 6px 12px 4px;
-  transition: all 0.3s ease-in-out 0s;
-  -moz-transition: all 0.3s ease-in-out 0s;
-  -webkit-transition: all 0.3s ease-in-out 0s;
-  -o-transition: all 0.3s ease-in-out 0s;
-}
+/* Toggle Switch */
+.custom-control.teleport-switch {
+  --color: #4cd964;
+  padding-left: 0; }
+  .custom-control.teleport-switch .teleport-switch-control-input {
+    display: none; }
+    .custom-control.teleport-switch .teleport-switch-control-input:checked ~ .teleport-switch-control-indicator {
+      border-color: var(--color); }
+      .custom-control.teleport-switch .teleport-switch-control-input:checked ~ .teleport-switch-control-indicator::after {
+        left: -14px; }
+      .custom-control.teleport-switch .teleport-switch-control-input:checked ~ .teleport-switch-control-indicator::before {
+        right: 2px;
+        background-color: var(--color); }
+    .custom-control.teleport-switch .teleport-switch-control-input:disabled ~ .teleport-switch-control-indicator {
+      opacity: .4; }
+  .custom-control.teleport-switch .teleport-switch-control-indicator {
+    display: inline-block;
+    position: relative;
+    margin: 0 10px;
+    top: 4px;
+    width: 32px;
+    height: 20px;
+    background: #fff;
+    border-radius: 16px;
+    -webkit-transition: .3s;
+    -o-transition: .3s;
+    transition: .3s;
+    border: 2px solid #ccc;
+    overflow: hidden; }
+    .custom-control.teleport-switch .teleport-switch-control-indicator::after {
+      content: '';
+      display: block;
+      position: absolute;
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      -webkit-transition: .3s;
+      -o-transition: .3s;
+      transition: .3s;
+      top: 2px;
+      left: 2px;
+      background: #ccc; }
+    .custom-control.teleport-switch .teleport-switch-control-indicator::before {
+      content: '';
+      display: block;
+      position: absolute;
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      -webkit-transition: .3s;
+      -o-transition: .3s;
+      transition: .3s;
+      top: 2px;
+      right: -14px;
+      background: #ccc; }
 
-.social-icon a:hover {
-  color: #EBEFF2 !important;
-}
-
-.social-icon .facebook:hover {
-  background: #3b5999;
-}
-
-.social-icon .twitter:hover {
-  background: #4A9CEC;
-}
-
-.social-icon .instagram:hover {
-  background: #D6274D;
-}
-
-.social-icon .linkedin:hover {
-  background: #1260A2;
-}
-
-.social-icon .google:hover {
-  background: #CE332A;
-}
 
 /* ScrollToTop */
 a.back-to-top {
@@ -509,6 +527,7 @@ hr {
   padding: 30px 0;
 }
 
+/* Navbar Items Section */
 .navbar-brand {
   position: relative;
   padding: 0px;
@@ -646,7 +665,7 @@ hr {
 }
 
 .navbar li.active a.nav-link {
-  color: #preset;
+  color: inherit;
 }
 
 .dropdown-toggle::after {
@@ -705,7 +724,7 @@ hr {
   border-bottom: 1px solid #f1f1f1;
   text-decoration: none;
   display: inline-block;
-  float: left;
+  float: none;
   clear: both;
   position: relative;
   outline: 0;
@@ -743,6 +762,11 @@ hr {
   animation-name: fadeInUpMenu;
 }
 
+.navbar-button {
+  margin-top: 0px;
+  color: #343638;
+}
+
 /* ==========================================================================
 3. Hero Area
 ========================================================================== */
@@ -775,7 +799,7 @@ hr {
 }
 
 .sloder-img {
-  background: #34363a;
+  background: #343638;
 }
 
 /* Team Item */
@@ -1274,16 +1298,37 @@ textarea {
 
 /*cta
 */
-#cta{background: ;}
+#cta{background: inherit;}
 
 /* Footer Area Start */
+/*top half of footer containing details and links*/
 .footer-area {
-  position: relative;
-  padding: 150px 0px 0px;
-  background: #EBEFF2;
+  padding-top: 2em;
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
 
-.footer-area .footer-titel {
+.footer-area a {
+  color: #343638;
+}
+
+.footer-top {
+  background-color: #EBEFF2;
+  width: 100%;
+  height: 310px;
+  justify-content: space-around;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
+.footer-logo {
+  display: flex;
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
+.footer-titel {
   font-size: 18px;
   color: #333333;
   font-weight: 500;
@@ -1291,126 +1336,59 @@ textarea {
   letter-spacing: 0.5px;
 }
 
-.footer-area .footer-titel span {
-  color: #ccc;
-  font-weight: 400;
+.footer-description {
+  color: #343638;
+  width: 180px;
 }
 
-.footer-area .textwidget p {
-  color: #333;
+.footer-social {
+  display: flex;
+  flex-direction: row;
+  padding-left: 0%;
+  padding-top: 4em;
 }
 
-.footer-area .footer-link li {
-  margin-bottom: 10px;
-}
-
-.footer-area .footer-link li a {
-  color: #333;
-  font-size: 14px;
-  font-weight: 400;
-  position: relative;
-}
-
-.footer-area .footer-link li a:hover {
-  color: #6268DD;
-}
-
-.footer-area .address li {
-  margin-bottom: 20px;
-}
-
-.footer-area .address li a {
-  color: #666666;
-  font-size: 14px;
-  line-height: 30px;
-  font-weight: 400;
-}
-
-.footer-area .address li a i {
-  font-size: 22px;
-  width: 32px;
-  vertical-align: middle;
-  height: 36px;
-  text-align: center;
-  display: inline-block;
-  float: left;
-  margin-right: 5px;
-  line-height: 32px;
-}
-
-.footer-area #subscribe-form {
-  margin-top: 10px;
-}
-
-.footer-area #subscribe-form .form-group {
-  position: relative;
-}
-
-.footer-area #subscribe-form .form-group .btn-common {
-  position: absolute;
-  top: 0;
-  right: 0;
-  padding: 7px 15px;
-  height: 52px;
-  border-radius: 0;
-  background: transparent;
-  color: #6268DD;
-}
-
-#copyright .copyright-content {
-  border-top: 1px solid #d5d4e9;
-  padding: 15px 0;
-  margin: 45px 0 0px;
-}
-
-#copyright p {
-  line-height: 42px;
-  color: #333;
-  text-align: center;
-  margin: 0;
-}
-
-#copyright p a {
-  color: #6268DD;
-}
-
-.social-icon a {
-  color: #272727;
-  background: #EBEFF2;
-  width: 32px;
+.footer-social-icons {
   height: 32px;
-  line-height: 34px;
-  display: inline-block;
-  text-align: center;
-  border-radius: 4px;
+  width: 32px;
+  padding-left: 0px;
+  margin-right: 10px;
+}
+
+.footer-list {
+  align-items: flex-start;
+}
+
+.footer-link {
   font-size: 16px;
-  margin: 15px 6px 12px 4px;
-  transition: all 0.3s ease-in-out 0s;
-  -moz-transition: all 0.3s ease-in-out 0s;
-  -webkit-transition: all 0.3s ease-in-out 0s;
-  -o-transition: all 0.3s ease-in-out 0s;
+  margin-bottom: 10px;
+  text-decoration: none;
 }
 
-.social-icon a:hover {
-  color: #EBEFF2 !important;
+.appstores {
+  display: flex;
+  flex-direction: column;
+  width: 180px;
+  vertical-align: middle;
 }
 
-.social-icon .facebook:hover {
-  background: #3b5999;
+.appstore-link {
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+}
+.footer-nav {
+  width: 180px;
 }
 
-.social-icon .twitter:hover {
-  background: #4A9CEC;
-}
+/*bottom of footer showing copyright information*/
 
-.social-icon .instagram:hover {
-  background: #D6274D;
-}
-
-.social-icon .linkedin:hover {
-  background: #1260A2;
-}
-
-.social-icon .google:hover {
-  background: #CE332A;
+.footer-bottom {
+  background-color: #343638;
+  width: 100%;
+  height: 50px;
+  color: white;
+  text-align: center;
+  line-height: 50px;
+  padding: 0px;
+  font-size: 16px;
 }

@@ -1,0 +1,186 @@
+@import url("https://fonts.googleapis.com/css?family=Arvo:700|Open+Sans");
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css");
+
+body, html {
+  font-family: 'Open Sans', sans-serif;
+  background-color: #CDD5FF;
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  margin: 0;
+  top: 50px;
+  left: 50%;
+  position: absolute;
+  text-align: center;
+  transform: translateX(-50%);
+  background-color: #EBEFF2;
+  border-radius: 9px;
+  width: 400px;
+  box-shadow: 10px 10px 15px rgba( 25, 31, 53, 0.2);
+}
+
+.logo {
+  padding-top: 30px;
+  padding-bottom: 10px;
+}
+
+h5 {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  color: #6268DD;
+  padding-top: 10px;
+}
+
+.bi {
+  color: #6268DD;
+  
+}
+
+.input-group-text {
+  border: none ;
+  background-color: #fff ;
+}
+
+input[type = "text"], input[type = "password"] {
+  display: block;
+  margin: auto;
+  background: auto;
+  border: 0;
+  border-radius: 5px;
+  padding: 10px 10px;
+  width: 300px;
+  outline: none;
+  color: #EBEFF2;
+  transition: all .2s ease-out;
+}
+
+::-webkit-input-placeholder {
+  color: #EBEFF2;
+}
+
+input[type = "text"]:focus, input[type = "password"]:focus {
+  box-shadow: 2px 2px 4px rgba( 25, 31, 53, 0.5);
+}
+
+a{
+  color: #6268DD;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+
+.btn1 {
+  border:0;
+  background: #6268DD;
+  color: #EBEFF2;
+  border-radius: 100px;
+  width: 300px;
+  height: 48px;
+  margin-bottom: 15px;
+  font-size: 16px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.btn1:hover {
+  background: #494EBE;
+}
+
+.btn2 {
+  margin-bottom: 0px;
+  margin-left: 5px;
+}
+
+.remember {
+  color: #a3a3a3;
+  font-size: 13px;
+}
+
+.typcn {
+  position: absolute;
+  left: 339px;
+  top: 282px;
+  color: #6268DD;
+  font-size: 22px;
+  cursor: pointer;
+}      
+
+.typcn.active {
+  color: #6268DD;
+}
+
+.error {
+  background: #ff3333;
+  text-align: center;
+  width: 337px;
+  height: 20px;
+  padding: 2px;
+  border: 0;
+  border-radius: 5px;
+  margin: 10px auto 10px;
+  position: absolute;
+  top: 31%;
+  left: 7.2%;
+  color: white;
+  display: none;
+}
+
+.custom-control.teleport-switch {
+  --color: #6268DD ;
+  padding-left: 0; }
+  .custom-control.teleport-switch .teleport-switch-control-input {
+    display: none; }
+    .custom-control.teleport-switch .teleport-switch-control-input:checked ~ .teleport-switch-control-indicator {
+      border-color: var(--color); }
+      .custom-control.teleport-switch .teleport-switch-control-input:checked ~ .teleport-switch-control-indicator::after {
+        left: -14px; }
+      .custom-control.teleport-switch .teleport-switch-control-input:checked ~ .teleport-switch-control-indicator::before {
+        right: 2px;
+        background-color: var(--color); }
+    .custom-control.teleport-switch .teleport-switch-control-input:disabled ~ .teleport-switch-control-indicator {
+      opacity: .4; }
+  .custom-control.teleport-switch .teleport-switch-control-indicator {
+    display: inline-block;
+    position: relative;
+    margin: 0px 10px;
+    top: 0px;
+    width: 32px;
+    height: 20px;
+    background: #fff;
+    border-radius: 16px;
+    -webkit-transition: .3s;
+    -o-transition: .3s;
+    transition: .3s;
+    border: 2px solid #ccc;
+    overflow: hidden; }
+    .custom-control.teleport-switch .teleport-switch-control-indicator::after {
+      content: '';
+      display: block;
+      position: absolute;
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      -webkit-transition: .3s;
+      -o-transition: .3s;
+      transition: .3s;
+      top: 2px;
+      left: 2px;
+      background: #ccc; }
+    .custom-control.teleport-switch .teleport-switch-control-indicator::before {
+      content: '';
+      display: block;
+      position: absolute;
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      -webkit-transition: .3s;
+      -o-transition: .3s;
+      transition: .3s;
+      top: 2px;
+      right: -14px;
+      background: #ccc; }
