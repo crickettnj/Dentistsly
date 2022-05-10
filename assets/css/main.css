@@ -356,6 +356,27 @@ hr {
   border-top: 1px dotted #ddd;
 }
 
+
+/* Custom Scrollbar style */
+html::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	background-color: #EBEFF2;
+}
+
+html::-webkit-scrollbar
+{
+	width: 6px;
+	background-color: #EBEFF2;
+}
+
+html::-webkit-scrollbar-thumb
+{
+	background-color: #6268DD;
+}
+
+
+
 /* ==========================================================================
   8. Features Section Style
 ========================================================================== */
@@ -925,7 +946,8 @@ hr {
 
 /* ==========================================================================
    Pricing Table Style
-   ========================================================================== */
+========================================================================== */
+
 #pricing {
   text-align: center;
 }
@@ -1323,11 +1345,16 @@ textarea {
   font-size: 16px;
 }
 
-/*cta
-*/
+/* cta */
 #cta{background: inherit;}
 
+
+
+
+
 /* Footer Area Start */
+
+
 /*top half of footer containing details and links*/
 .footer-area {
   padding-top: 2em;
@@ -1410,12 +1437,12 @@ textarea {
 /*bottom of footer showing copyright information*/
 
 .footer-bottom {
-  background-color: #343638;
-  width: 100%;
-  height: 50px;
-  color: white;
-  text-align: center;
-  line-height: 50px;
-  padding: 0px;
-  font-size: 16px;
+  background-color: #343638; /* set dark background color for footer */
+  width: 100%; /* footer width to match viewport width */
+  height: 50px; /* set fixed height for footer */
+  color: white; /* make text color white */
+  text-align: center; /* center text horizontally */
+  line-height: 50px; /* center the text vertically */
+  padding: 0px; /* remove preset padding values */
+  font-size: 16px; /* specify font size for copyright information */
 }
