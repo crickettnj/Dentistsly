@@ -1,91 +1,343 @@
-<!-- Contact Section Start -->
-<section id="contact" class="section-padding bg-gray">
-  <div class="container">
-    <div class="section-header text-center">
-      <h2 class="section-title wow fadeInDown" data-wow-delay="0.3s">
-        Countact Us
-      </h2>
-      <div class="shape wow fadeInDown" data-wow-delay="0.3s"></div>
-    </div>
-    <div class="row contact-form-area wow fadeInUp" data-wow-delay="0.3s">
-      <div class="col-lg-7 col-md-12 col-sm-12">
-        <div class="contact-block">
-          <form id="contactForm">
-            <div class="row">
-              <div class="col-md-6">
-                <div class="form-group">
-                  <input
-                    type="text"
-                    class="form-control"
-                    id="name"
-                    name="name"
-                    placeholder="Name"
-                    required
-                    data-error="Please enter your name"
-                  />
-                  <div class="help-block with-errors"></div>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Site Title -->
+    <title>Odontologia</title>
+
+    <!-- Site Logo -->
+    <link rel="icon" href="images/logo.png" type="image/png" />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <!-- Icon -->
+    <link rel="stylesheet" href="assets/fonts/line-icons.css" />
+    <!-- Owl carousel -->
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="assets/css/owl.theme.css" />
+
+    <!-- Animate -->
+    <link rel="stylesheet" href="assets/css/animate.css" />
+    <!-- Main Style -->
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <!-- Responsive Style -->
+    <link rel="stylesheet" href="assets/css/responsive.css" />
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="assets/js/jquery-min.js" defer></script>
+    <script src="assets/js/popper.min.js" defer></script>
+    <script src="assets/js/bootstrap.min.js" defer></script>
+    <script src="assets/js/owl.carousel.min.js" defer></script>
+    <script src="assets/js/wow.js" defer></script>
+    <script src="assets/js/jquery.nav.js" defer></script>
+    <script src="assets/js/scrolling-nav.js" defer></script>
+    <script src="assets/js/jquery.easing.min.js" defer></script>
+    <script src="assets/js/main.js" defer></script>
+    <script src="assets/js/form-validator.min.js" defer></script>
+    <script src="assets/js/contact-form-script.min.js" defer></script>
+  </head>
+  <body>
+    <!-- Header Area wrapper Starts -->
+    <header id="header-wrap">
+      <!-- Navbar Start -->
+      <nav
+        class="navbar navbar-expand-md bg-inverse fixed-top scrolling-navbar"
+        aria-label="Main Navigation"
+      >
+        <div class="container">
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <a href="index.html" class="navbar-brand"
+            ><img src="images/site-logo.png" alt="Site Logo"
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarCollapse"
+            aria-controls="navbarCollapse"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <i class="lni-menu"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav mr-auto w-100 justify-content-end clearfix">
+              <li class="nav-item active">
+                <a class="nav-link" href="/index.html"> Home </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#features"> Features </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#pricing"> Pricing </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#testimonials"> Testimonials </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact"> Contact </a>
+              </li>
+              <li>
+                <div class="nav-item navbar-button">
+                  <a href="signup/index.html" class="nav-link">Join Today</a>
                 </div>
-              </div>
-              <div class="col-md-6">
-                <div class="form-group">
-                  <input
-                    type="text"
-                    placeholder="Email"
-                    id="email"
-                    class="form-control"
-                    name="email"
-                    required
-                    data-error="Please enter your email"
-                  />
-                  <div class="help-block with-errors"></div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!-- Navbar End -->
+    </header>
+    <!-- Header Area wrapper End -->
+
+    <!-- Contact Section Start -->
+    <section id="contact" class="section-padding bg-gray">
+      <div class="container">
+        <div class="section-header text-center">
+          <h2 class="section-title wow fadeInDown" data-wow-delay="0.3s">
+            Contact Us
+          </h2>
+          <div class="shape wow fadeInDown" data-wow-delay="0.3s"></div>
+        </div>
+        <div class="row contact-form-area wow fadeInUp" data-wow-delay="0.3s">
+          <div class="col-lg-7 col-md-12 col-sm-12">
+            <div class="contact-block">
+              <form id="contactForm">
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="name"
+                        name="name"
+                        placeholder="Name"
+                        required
+                        data-error="Please enter your name"
+                      />
+                      <div class="help-block with-errors"></div>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <input
+                        type="text"
+                        placeholder="Email"
+                        id="email"
+                        class="form-control"
+                        name="email"
+                        required
+                        data-error="Please enter your email"
+                      />
+                      <div class="help-block with-errors"></div>
+                    </div>
+                  </div>
+                  <div class="col-md-12">
+                    <div class="form-group">
+                      <input
+                        type="text"
+                        placeholder="Subject"
+                        id="msg_subject"
+                        class="form-control"
+                        required
+                        data-error="Please enter your subject"
+                      />
+                      <div class="help-block with-errors"></div>
+                    </div>
+                  </div>
+                  <div class="col-md-12">
+                    <div class="form-group">
+                      <textarea
+                        class="form-control"
+                        id="message"
+                        placeholder="Your Message"
+                        rows="7"
+                        data-error="Write your message"
+                        required
+                      ></textarea>
+                      <div class="help-block with-errors"></div>
+                    </div>
+                    <div class="submit-button text-left">
+                      <button
+                        class="btn btn-common"
+                        id="form-submit"
+                        type="submit"
+                      >
+                        Send Message
+                      </button>
+                      <div id="msgSubmit" class="h3 text-center hidden"></div>
+                      <div class="clearfix"></div>
+                    </div>
+                  </div>
                 </div>
-              </div>
-              <div class="col-md-12">
-                <div class="form-group">
-                  <input
-                    type="text"
-                    placeholder="Subject"
-                    id="msg_subject"
-                    class="form-control"
-                    required
-                    data-error="Please enter your subject"
-                  />
-                  <div class="help-block with-errors"></div>
-                </div>
-              </div>
-              <div class="col-md-12">
-                <div class="form-group">
-                  <textarea
-                    class="form-control"
-                    id="message"
-                    placeholder="Your Message"
-                    rows="7"
-                    data-error="Write your message"
-                    required
-                  ></textarea>
-                  <div class="help-block with-errors"></div>
-                </div>
-                <div class="submit-button text-left">
-                  <button class="btn btn-common" id="form-submit" type="submit">
-                    Send Message
-                  </button>
-                  <div id="msgSubmit" class="h3 text-center hidden"></div>
-                  <div class="clearfix"></div>
-                </div>
-              </div>
+              </form>
             </div>
-          </form>
+          </div>
+          <div class="col-lg-5 col-md-12 col-xs-12">
+            <div class="map">
+              <object
+                style="border: 0; height: 280px; width: 100%"
+                data="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d34015.943594576835!2d-106.43242624069771!3d31.677719472407432!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86e75d90e99d597b%3A0x6cd3eb9a9fcd23f1!2sCourtyard+by+Marriott+Ciudad+Juarez!5e0!3m2!1sen!2sbd!4v1533791187584"
+              ></object>
+            </div>
+          </div>
         </div>
       </div>
-      <div class="col-lg-5 col-md-12 col-xs-12">
-        <div class="map">
-          <object
-            style="border: 0; height: 280px; width: 100%"
-            data="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d34015.943594576835!2d-106.43242624069771!3d31.677719472407432!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86e75d90e99d597b%3A0x6cd3eb9a9fcd23f1!2sCourtyard+by+Marriott+Ciudad+Juarez!5e0!3m2!1sen!2sbd!4v1533791187584"
-          ></object>
+    </section>
+    <!-- Contact Section End -->
+
+    <footer>
+      <div class="footer-area">
+        <div class="footer-top">
+          <div class="footer-nav">
+            <img
+              src="images/site-logo.png"
+              alt="footer logo"
+              class="footer-logo"
+            />
+            <p class="footer-description">
+              Short description of what the company is about and what the goals
+              are.
+            </p>
+            <div>
+              <ul class="footer-social">
+                <li>
+                  <a href="">
+                    <img
+                      src="images/icons/social-media/facebook-logo.png"
+                      alt="facebook"
+                      class="footer-social-icons"
+                    />
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <img
+                      src="images/icons/social-media/twitter-logo.png"
+                      alt="twitter"
+                      class="footer-social-icons"
+                    />
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <img
+                      src="images/icons/social-media/linkedin-logo.png"
+                      alt="linkedin"
+                      class="footer-social-icons"
+                    />
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <img
+                      src="images/icons/social-media/instagram-logo.png"
+                      alt="instagram"
+                      class="footer-social-icons"
+                    />
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <img
+                      src="images/icons/social-media/youtube-logo.png"
+                      alt="youtube"
+                      class="footer-social-icons"
+                    />
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer-nav">
+            <nav aria-label="Footer navigation">
+              <ul class="footer-list">
+                <li class="footer-titel">Quick Links</li>
+                <li class="footer-link">
+                  <a href="index.html">Home</a>
+                </li>
+                <li class="footer-link">
+                  <a href="library.html">Library</a>
+                </li>
+                <li class="footer-link">
+                  <a href="help.html">Help and Support</a>
+                </li>
+                <li class="footer-link">
+                  <a href="contact.html">Contact Us</a>
+                </li>
+                <li class="footer-link">
+                  <a href="feedback.html">Feedback</a>
+                </li>
+                <li class="footer-link">
+                  <a href="service.html">Terms of Service</a>
+                </li>
+                <li class="footer-link">
+                  <a href="privacy.html">Privacy Policy</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div class="footer-nav">
+            <ul class="footer-list">
+              <li class="footer-titel">Our Products</li>
+              <li class="footer-link">
+                <a href="">Android App</a>
+              </li>
+              <li class="footer-link">
+                <a href="">iOS App</a>
+              </li>
+              <li class="footer-link">
+                <a href="\shop.html">Shop</a>
+              </li>
+              <li class="footer-link">
+                <a href="\examprep.html">ExamPrep</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-nav">
+            <p class="footer-titel">Download Our Apps</p>
+            <div>
+              <a>
+                <img
+                  src="images/icons/get on app store.png"
+                  class="appstore-link appstores"
+                  alt="App Store Logo"
+                />
+              </a>
+            </div>
+            <div>
+              <a>
+                <img
+                  src="images/icons/get on play store.png"
+                  class="appstore-link appstores"
+                  alt="Play Store Logo"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p class="copyright-text">
+            © Copyright 2022 Dentistsly Inc. All Rights Reserved.
+          </p>
         </div>
       </div>
+    </footer>
+    <!-- Go to Top Link -->
+    <a href="#" class="back-to-top">
+      <i class="lni-arrow-up"></i>
+    </a>
+
+    <!-- Preloader -->
+    <div id="preloader">
+      <div class="loader" id="loader-1"></div>
     </div>
-  </div>
-</section>
-<!-- Contact Section End -->
+    <!-- End Preloader -->
+  </body>
+</html>
